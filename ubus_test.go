@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/golangwrt/libubox"
+	"github.com/darin755/libubox-go"
 )
 
 type echoParam struct {

@@ -19,8 +19,7 @@ import (
 	"syscall"
 	"time"
 	"unsafe"
-
-	"github.com/golangwrt/libubox"
+	"github.com/darin755/libubox-go"
 )
 
 // Context encapsulates struct ubus_context
