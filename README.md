@@ -28,7 +28,7 @@ libubus wrapper
     e.g.: to cross compile for openwrt running on x86_64:
 
     ```
-    CC=mips-openwrt-linux-gcc CGO_ENABLED=1 \
+    CC=musl-gcc CGO_ENABLED=1 \
     CGO_LDFLAGS="-LCGO_LDFLAGS="-L/home/darin/openwrt/staging_dir/target-x86_64_musl/usr/lib/" \
     CGO_CFLAGS="-I/home/darin/openwrt/staging_dir/target-x86_64_musl/usr/include/"\
     GOARCH=mips go build
