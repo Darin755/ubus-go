@@ -25,12 +25,12 @@ libubus wrapper
 
     `CC=/path/to/compiler ...`
 
-    e.g.: to cross compile for openwrt running on MIPS:
+    e.g.: to cross compile for openwrt running on x86_64:
 
     ```
     CC=mips-openwrt-linux-gcc CGO_ENABLED=1 \
-    CGO_LDFLAGS="-L/opt/packages/lede_repo/lede/staging_dir/target-mips_musl/usr/lib" \
-    CGO_CFLAGS="-I/opt/packages/lede_repo/lede/staging_dir/target-mips_musl/usr/include"\
+    CGO_LDFLAGS="-LCGO_LDFLAGS="-L/home/darin/openwrt/staging_dir/target-x86_64_musl/usr/lib/" \
+    CGO_CFLAGS="-I/home/darin/openwrt/staging_dir/target-x86_64_musl/usr/include/"\
     GOARCH=mips go build
     ```
 
